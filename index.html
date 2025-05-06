@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greenphosfor</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f3f5f4;
+      color: #333;
+      opacity: 0;
+      transition: opacity 0.8s ease-in-out;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #2e7d32;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      color: white;
+      font-size: 1.8rem;
+    }
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1581091226825-a6a2a5a86a3e') center/cover no-repeat;
+      padding: 100px 40px;
+      text-align: center;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #2e7d32;
+    }
+    section p, ul {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    footer {
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+    img.responsive {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Greenphosfor</h1>
+    <nav>
+      <a href="#beranda">Beranda</a>
+      <a href="#tentang">Tentang</a>
+      <a href="#layanan">Layanan</a>
+      <a href="#tim">Tim</a>
+      <a href="#berita">Berita</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <section id="beranda" class="hero">
+    <h2>Selamat Datang di Greenphosfor</h2>
+    <p>Kami berkomitmen untuk mendukung kemakmuran petani sawit dan menjaga kelestarian lingkungan.</p>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>Greenphosfor adalah perusahaan lingkungan yang fokus pada pemberdayaan petani sawit melalui pendekatan berkelanjutan dan ramah lingkungan. Kami percaya bahwa masa depan hijau dimulai dari desa dan petani lokal.</p>
+    <img src="https://images.unsplash.com/photo-1616587894654-2d06fc6f7cf7" alt="Tentang Greenphosfor" class="responsive">
+  </section>
+
+  <section id="layanan">
+    <h2>Layanan & Program</h2>
+    <ul>
+      <li>Pendampingan dan pelatihan petani sawit</li>
+      <li>Teknologi pertanian berkelanjutan</li>
+      <li>Peningkatan akses pasar & sertifikasi</li>
+    </ul>
+    <img src="petani1.PNG" alt="Layanan Greenphosfor" class="responsive">
+  </section>
+
+  <section id="tim">
+    <h2>Tim Kami</h2>
+    <p>Tim kami terdiri dari para profesional lingkungan, agronomis, dan fasilitator komunitas yang berdedikasi untuk perubahan positif.</p>
+    <img src="https://images.unsplash.com/photo-1532074205216-d0e1f4b87368" alt="Tim Greenphosfor" class="responsive">
+  </section>
+
+  <section id="berita">
+    <h2>Berita & Artikel</h2>
+    <p>Ikuti pembaruan tentang kegiatan kami, artikel pertanian berkelanjutan, dan cerita inspiratif dari lapangan.</p>
+    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e" alt="Berita Greenphosfor" class="responsive">
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak Kami</h2>
+    <p>Email: info@greenphosfor.com</p>
+    <p>Telepon: +62 812-3456-7890</p>
+    <p>Alamat: Jl. Hijau Lestari No. 88, Jakarta</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Greenphosfor. Semua hak dilindungi.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.body.style.opacity = 1;
+    });
+  </script>
+</body>
+</html>
